@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc.Nazmun_Nahar.supplier8">
+   <children>
+      <Button layoutX="50.0" layoutY="66.0" mnemonicParsing="false" onAction="#GenerateStockReportButton" text="Generate Stock Report" />
+      <TableView layoutX="125.0" layoutY="112.0" prefHeight="200.0" prefWidth="271.0">
+        <columns>
+          <TableColumn fx:id="ProductNameColumn" prefWidth="98.39996337890625" text="Product Name" />
+          <TableColumn fx:id="ProductIdColumn" prefWidth="80.79998779296875" text="Product Id" />
+            <TableColumn fx:id="CurrentStockColumn" prefWidth="91.19999999999999" text="Current Stock" />
+        </columns>
+      </TableView>
+      <Button layoutX="222.0" layoutY="333.0" mnemonicParsing="false" onAction="#DownloadReportOnAction" text="Download Report" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc.zahid.u3g1">
+   <children>
+      <AnchorPane prefHeight="586.0" prefWidth="851.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <RadioButton fx:id="rbMale" layoutX="122.0" layoutY="148.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="94.0" text="RadioButton" />
+            <RadioButton fx:id="rbfemale" layoutX="232.0" layoutY="148.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="94.0" text="RadioButton" />
+            <Label fx:id="rbmale" layoutX="11.0" layoutY="181.0" text="Gender" />
+            <TextField fx:id="textgender" layoutX="122.0" layoutY="177.0" prefHeight="25.0" prefWidth="291.0" />
+            <TextField fx:id="textdateofbirth" layoutX="122.0" layoutY="209.0" prefHeight="25.0" prefWidth="291.0" text="****" />
+            <Label fx:id="txtAddress" layoutX="6.0" layoutY="241.0" prefHeight="17.0" prefWidth="50.0" text="Address" />
+            <TextField fx:id="textadress" layoutX="122.0" layoutY="237.0" prefHeight="25.0" prefWidth="291.0" />
+            <TextField fx:id="textautobom" layoutX="122.0" layoutY="269.0" prefHeight="25.0" prefWidth="291.0" text="Autobom" />
+            <Label fx:id="txtNID" layoutX="23.0" layoutY="148.0" prefHeight="17.0" prefWidth="36.0" text="Nid" />
+            <Label fx:id="dpDOB" layoutX="12.0" layoutY="213.0" prefHeight="17.0" prefWidth="36.0" text="Dob" />
+            <Label fx:id="txtVehicleDetails" layoutX="11.0" layoutY="301.0" prefHeight="17.0" prefWidth="87.0" text="Vehicle Detalls" />
+            <TextField fx:id="txtEmail" layoutX="108.0" layoutY="64.0" prefHeight="25.0" prefWidth="291.0" />
+            <TextField fx:id="txtContactNo" layoutX="108.0" layoutY="101.0" />
+            <Label fx:id="textprofile" layoutX="98.0" layoutY="7.0" prefHeight="26.0" prefWidth="156.0" text="Profile Information" />
+            <TableView fx:id="tableInspectionReports" layoutX="41.0" layoutY="364.0" prefHeight="200.0" prefWidth="226.0">
+              <columns>
+                <TableColumn fx:id="colReportId" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="colReportDate" prefWidth="75.0" text="Date" />
+                  <TableColumn fx:id="colReportStatus" prefWidth="75.0" text="Status" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txtFullName" layoutX="108.0" layoutY="33.0" prefHeight="25.0" prefWidth="291.0" />
+            <Label fx:id="usernamelabel" layoutX="31.0" layoutY="37.0" prefHeight="17.0" prefWidth="56.0" text="Full Name" />
+            <Label fx:id="emailfield" layoutX="33.0" layoutY="68.0" prefHeight="17.0" prefWidth="44.0" text="Email" />
+            <Label fx:id="contractfield" layoutX="13.0" layoutY="105.0" prefHeight="17.0" prefWidth="72.0" text="Contact No." />
+            <Label fx:id="textInspectionReports" layoutX="27.0" layoutY="334.0" text="Inscpection Report">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="vehicleinformation" layoutX="385.0" layoutY="364.0" text="Vehicle  Information">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtVehicleInfo" layoutX="385.0" layoutY="391.0" prefHeight="104.0" prefWidth="235.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="568.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc.zahidc.confirmFielVisitsControlerclass"">
+   <children>
+      <AnchorPane layoutY="-9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="701.0">
+         <children>
+            <Label fx:id="textsupply" layoutX="143.0" layoutY="14.0" text="Supply Management">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="textname" layoutX="40.0" layoutY="59.0" text="Username:" />
+            <Label fx:id="textpassword" layoutX="40.0" layoutY="90.0" text="Password:" />
+            <TextField fx:id="textname" layoutX="122.0" layoutY="55.0" />
+            <TextField fx:id="textpassword" layoutX="122.0" layoutY="86.0" />
+            <Button fx:id="butonlogin" layoutX="225.0" layoutY="123.0" mnemonicParsing="false" text="Log In" />
+            <Label layoutX="39.0" layoutY="158.0" text="Dashbord">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="texttype" layoutX="39.0" layoutY="196.0" text="Crop Type:" />
+            <Label layoutX="42.0" layoutY="230.0" text="Quantity:" />
+            <TextField fx:id="textquantity" layoutX="122.0" layoutY="226.0" />
+            <ComboBox fx:id="aumicombobox" layoutX="121.0" layoutY="192.0" prefWidth="150.0" promptText="Aumi" />
+            <Label layoutX="42.0" layoutY="258.0" text="Delivery Region:" />
+            <RadioButton fx:id="northradiobutton" layoutX="145.0" layoutY="258.0" mnemonicParsing="false" text="North" />
+            <RadioButton fx:id="southradiobutton" layoutX="207.0" layoutY="258.0" mnemonicParsing="false" text="South" />
+            <Label fx:id="textdescription" layoutX="28.0" layoutY="291.0" text="Description:" />
+            <Label layoutX="28.0" layoutY="344.0" text="Supply Records">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textdescription" layoutX="122.0" layoutY="287.0" prefHeight="49.0" prefWidth="149.0" />
+            <Button fx:id="savebutton" layoutX="260.0" layoutY="342.0" mnemonicParsing="false" text="Save" />
+         </children>
+      </AnchorPane>
+      <TableView layoutX="63.0" layoutY="368.0" prefHeight="200.0" prefWidth="315.0">
+        <columns>
+          <TableColumn fx:id="colCropType" prefWidth="75.0" text="Crop Type" />
+          <TableColumn fx:id="colQuantity" prefWidth="75.0" text="Quantity" />
+            <TableColumn fx:id="colDeliveryRegion" prefWidth="92.0" text="Delivery region" />
+            <TableColumn fx:id="coldescrpten" prefWidth="75.0" text="Descripten" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

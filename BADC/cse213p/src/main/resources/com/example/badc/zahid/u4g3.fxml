@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="615.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc.zahid.u4g3">
+   <children>
+      <AnchorPane layoutX="14.0" prefHeight="448.0" prefWidth="703.0">
+         <children>
+            <Label layoutX="225.0" layoutY="1.0" text="distributor supply deliveries">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="45.0" text="Usename:" />
+            <Label layoutX="22.0" layoutY="84.0" text="Password:" />
+            <TextField fx:id="usernametextfield" layoutX="102.0" layoutY="41.0" />
+            <TextField fx:id="passwordtextfield" layoutX="102.0" layoutY="80.0" />
+            <Button layoutX="199.0" layoutY="118.0" mnemonicParsing="false" onAction="#loginbutton" text="Log IN" />
+            <Label layoutX="22.0" layoutY="154.0" text="Ongoing Delivery:" />
+            <ComboBox fx:id="delivery1combobox" layoutX="150.0" layoutY="150.0" prefWidth="150.0" promptText="Delivery 1" />
+            <TableView layoutX="2.0" layoutY="203.0" prefHeight="200.0" prefWidth="537.0">
+              <columns>
+                <TableColumn fx:id="DeliveryIDcolumn" prefWidth="133.0" text="Delivery ID" />
+                <TableColumn fx:id="Statuscolumn" prefWidth="131.0" text="Status" />
+                  <TableColumn fx:id="Datecolumn" prefWidth="131.0" text="Date" />
+                  <TableColumn fx:id="Commentscolumn" prefWidth="141.0" text="Comments" />
+              </columns>
+            </TableView>
+            <Label layoutX="14.0" layoutY="414.0" text="Comment:" />
+            <RadioButton layoutX="366.0" layoutY="414.0" mnemonicParsing="false" onAction="#updateonaction" text="Update" />
+            <RadioButton layoutX="465.0" layoutY="414.0" mnemonicParsing="false" onAction="#trackonaction" text="Track" />
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="commenttextarea" layoutX="90.0" layoutY="437.0" prefHeight="156.0" prefWidth="537.0" />
+   </children>
+</AnchorPane>

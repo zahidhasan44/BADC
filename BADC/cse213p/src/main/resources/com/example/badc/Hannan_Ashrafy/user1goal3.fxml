@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc.Hannan_Ashrafy.User1goal3">
+   <children>
+      <Text layoutX="226.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="weather Report">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="weatherInformtionTextField" layoutX="37.0" layoutY="148.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="additionalInformationTextArea" layoutX="307.0" layoutY="148.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text fx:id="additionalInformationText" layoutX="355.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additionalinformation" />
+      <Text fx:id="weatherInformationText" layoutX="78.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="weater information" />
+   </children>
+</AnchorPane>

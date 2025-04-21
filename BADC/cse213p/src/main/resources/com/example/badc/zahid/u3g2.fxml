@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="547.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc.zahid.u3g2">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="702.0">
+         <children>
+            <Label layoutX="28.0" layoutY="33.0" prefHeight="17.0" prefWidth="62.0" text="Username:" />
+            <Label layoutX="33.0" layoutY="70.0" text="Password:" />
+            <Label layoutX="45.0" layoutY="107.0" text="Event:" />
+            <TextField fx:id="usernametextfield" layoutX="99.0" layoutY="29.0" />
+            <TextField fx:id="passwordtextfield" layoutX="99.0" layoutY="66.0" />
+            <ComboBox fx:id="eventtypecombobox" layoutX="99.0" layoutY="103.0" prefWidth="150.0" promptText="Type" />
+            <TableView layoutX="28.0" layoutY="160.0" prefHeight="200.0" prefWidth="380.0">
+              <columns>
+                <TableColumn fx:id="Categorycolumn" prefWidth="75.0" text="Category" />
+                <TableColumn fx:id="Namecolumn" prefWidth="75.0" text="Name" />
+                  <TableColumn fx:id="Detailscolumn" prefWidth="75.0" text="Details" />
+                  <TableColumn fx:id="Quantitycolumn" prefWidth="75.0" text="Quantity" />
+                  <TableColumn fx:id="Pricecolumn" prefWidth="79.0" text="Price" />
+              </columns>
+            </TableView>
+            <Label layoutX="31.0" layoutY="377.0" text="Current Crop:" />
+            <TextField fx:id="currentcroprextfield" layoutX="144.0" layoutY="373.0" />
+            <RadioButton fx:id="cropyesradio" layoutX="139.0" layoutY="412.0" mnemonicParsing="false" onAction="#radiovutton" prefHeight="17.0" prefWidth="100.0" text="CropYesRadio" />
+            <RadioButton layoutX="250.0" layoutY="412.0" mnemonicParsing="false" onAction="#cropnoradio" text="Crop NoRadio" />
+            <DatePicker fx:id="deliverydatepicker" layoutX="132.0" layoutY="435.0" />
+            <Label layoutX="33.0" layoutY="439.0" text="Delivery Date:" />
+            <Label layoutX="31.0" layoutY="473.0" text="Farmer Details:" />
+            <TextField fx:id="farmerfield" layoutX="132.0" layoutY="469.0" />
+            <Button layoutX="222.0" layoutY="508.0" mnemonicParsing="false" onAction="#submitrequestButton" text="Submit Request" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

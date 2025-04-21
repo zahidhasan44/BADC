@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc.Nazmun_Nahar.supplier7">
+   <children>
+      <Label layoutX="64.0" layoutY="107.0" text="Product Id" />
+      <Label layoutX="245.0" layoutY="43.0" text="View Orders">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ProductIdTextField" layoutX="134.0" layoutY="103.0" />
+      <Button layoutX="152.0" layoutY="142.0" mnemonicParsing="false" onAction="#ViewOrdersOnAction" text="View Orders" />
+      <TableView layoutX="109.0" layoutY="186.0" prefHeight="200.0" prefWidth="238.0">
+        <columns>
+          <TableColumn fx:id="ProductNameColumn" prefWidth="95.20001220703125" text="Product Name" />
+          <TableColumn fx:id="QuantityColumn" prefWidth="72.0" text="Quantity" />
+            <TableColumn fx:id="OrderDateColumn" prefWidth="69.60001220703126" text="Order Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
